@@ -7,15 +7,45 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="{{ url_for('static', filename='js/form.js') }}"></script>
 </head>
 
 <body>
-    <h1>Christmas Pine Tree</h1>
+    <h1 align="center">Christmas Pine Tree</h1>
+    <br>
+    <h3 align="center">Voiçi votre Sapin avec {{nombre}} branches</h3>
+    </div>
     <br><br>
-    <a href="/">
-        <h3 align="center">Retour au Projet Expertus</h3>
-    </a>
+    <div>
+        <!-- <h3 align="center">{{ star }}</h3>
+        {% for l in branch %} {% if l % 2 == 1 %}
+        <h3 align="center">{{ l*star }}</h3>
+        <h3 align="center">{{((2*l)-1)*space}} </h3>
+        {% endif %} {% endfor %} {% for k in foot %}
+        <h3 align="center">{{(a*space)+a}}</h3>
+        {% endfor %} -->
+        <!-- <h3 align="center">{{(a-1)*space+supt}}</h3> -->
+    </div>
+
+    <br><br>
+    <div align=center>
+
+
+    </div>
+    <div align="center">
+        <a href="/pine">
+            <button type="button" class="btn btn-primary">
+            <h3 align="center">Nouveau Sapin</h3>
+            </button>
+        </a>
+    </div>
+    <br><br>
+    <div align="center">
+        <a href="/">
+            <button type="button" class="btn btn-primary">
+            <h3 align="center">Retour au Projet Expertus</h3>
+        </button>
+        </a>
+    </div>
 </body>
 
 </html>

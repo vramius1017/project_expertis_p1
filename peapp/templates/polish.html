@@ -8,7 +8,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="{{ url_for('static', filename='js/form.js') }}"></script>
+    <script src="{{ url_for('static', filename='result_polish.js') }}"></script>
 
 </head>
 
@@ -30,17 +30,27 @@
 
 
     <br><br>
-
+    <div align="center">
+        <form method="POST" action="/result_polish/">
+            <h5 align="center">Veuillez entrer dans le premier champ un nombre entier</h5>
+            <h5 align="center">Veuillez entrer dans le second champ un second nombre entier</h5>
+            <input type="number" name="nombre1" min="0" max="1200">
+            <input type="number" name="nombre2" min="0" max="1200">
+            <!--possibilité de mettre le min du nombre2 à 1 pour empécher une division par zéro-->
+            <input type="text" name="op" placeholder="choisir + , - , * , / ">
+            <!--une alternative dans le script et un script de test sur la division par zéro seront effectuer dans le cas présent-->
+            <button id="btn">Résultat</button>
+            <div id="response"></div>
+        </form>
+    </div>
     <article>
-        <h5 align="center">Veuillez entrer dans le premier champ un nombre entier</h5>
-        <h5 align="center">Veuillez entrer dans le second champ un second nombre entier</h5>
-        <h5 align="center">Selectionner l'opération à effectuer</h5>
-        <h5 align="center">appuyer sur Résultat</h5>
+        <h5 align="center">Entrer l'opération à effectuer</h5>
+        <h5 align="center">Appuyer sur Résultat</h5>
     </article>
 
     <br>
 
-    <form>
+    <!-- <form>
         <div class="row">
             <div class="col">
                 <input type="text" class="form-control" placeholder="opérande 1">
@@ -53,11 +63,11 @@
         <div class="text-center">
             <div class="btn btn-info">
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <input class="form-check-input" type="radio" name="Radio" id="inlineRadio1" value="option1">
                     <label class="form-check-label" for="inlineRadio1">addition</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <input class="form-check-input" type="radio" name="Radio" id="inlineRadio2" value="option2">
                     <label class="form-check-label" for="inlineRadio2">soustraction</label>
                 </div>
                 <div class="form-check form-check-inline">
@@ -74,7 +84,7 @@
     <br>
     <div class="text-center">
         <button type="button" class="btn btn-primary">Resultats</button>
-    </div>
+    </div> -->
     <br>
 
     <a href="/">

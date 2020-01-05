@@ -7,16 +7,39 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="{{ url_for('static', filename='js/form.js') }}"></script>
+
 </head>
 
 <body>
-    <h1>Resultats En Langue Yoda</h1>
+    <div align="center">
+        <br><br>
+        <div align="center" class="alert alert-primary">
+            <h1>Votre Phrase</h1>
+        </div>
+        <h3>{{phrase}}</h3>
+    </div>
+    <div align="center" class="alert alert-success">
+        <h1>Resultats En Langue Yoda</h1>
 
+    </div>
+    <h3 align="center">{{jedi}}</h3>
     <br><br>
-    <a href="index.html">
-        <h3 align="center">Retour au Projet Expertus</h3>
-    </a>
+
+    <div align="center">
+        <a href="/words">
+            <button type="button" class="btn btn-primary">
+            <h3 align="center">Nouvelle Inversion</h3>
+        </button>
+        </a>
+    </div>
+    <br><br>
+    <div align="center">
+        <a href="/">
+            <button type="button" class="btn btn-primary">
+            <h3 align="center">Retour au Projet Expertus</h3>
+        </button>
+        </a>
+    </div>
 </body>
 
 </html>

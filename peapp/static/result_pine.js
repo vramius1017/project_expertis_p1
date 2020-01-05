@@ -4,7 +4,7 @@ $(function () {
      $.ajax({
          data : $('form').val(),
          type : 'POST',
-         url : '/',
+         url : '/result_pine/',
          success : function(response){
              console.log(response);
          },

@@ -7,15 +7,48 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="{{ url_for('static', filename='js/form.js') }}"></script>
+
 </head>
 
 <body>
-    <h1>Result from Polish Inverse Calculator</h1>
+    <div align="center" class="alert alert-primary">
+        <h1 align="center">Result from Polish Inverse Calculator</h1>
+    </div>
     <br><br>
-    <a href="index.html">
-        <h3 align="center">Retour au Projet Expertus</h3>
-    </a>
+    <div align="center" class="alert alert-primary">
+        <tr>
+            <h3>
+                <td>| premiére opérande: {{nombre1}}</td>
+                <td>| deuxiéme opérande : {{nombre2}}</td>
+                <td>| Opération : {{opn}}</td>
+                <td>| Symbole mathématique : {{op}}</td>
+            </h3>
+        </tr>
+
+    </div>
+    <div align="center" class="alert alert-success">
+        <th>
+            <h3>Résultat : {{nb}}</h3>
+        </th>
+    </div>
+    <br><br>
+    <br><br>
+
+    <div align="center">
+        <a href="/polish">
+            <button type="button" class="btn btn-primary">
+            <h3 align="center">Nouveau Calcul</h3>
+        </button>
+        </a>
+    </div>
+    <br><br>
+    <div align="center">
+        <a href="/">
+            <button type="button" class="btn btn-primary">
+            <h3 align="center">Retour au Projet Expertus</h3>
+        </button>
+        </a>
+    </div>
 </body>
 
 </html>
