@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<!-- lang = fr et bootstrap 4.0 header-->
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <br><br><br>
+    <!--formulaire sur deux champs nombre1 et Nombre2 type integer-->
+    <!--champ op type text -->
+    <div align="center">
+        <form method="POST" action="/get_data/">
+            <input type="number" name="nombre1" min="0" max="1200">
+            <input type="number" name="nombre2" min="0" max="1200">
+            <!--possibilité de mettre le min du nombre2 à 1 pour empécher une division par zéro-->
+            <input type="text" name="op" placeholder="choisir + , - , * , / ">
+            <!--une alternative dans le script et un script de test sur la division par zéro seront effectuer dans le cas présent-->
+            <button id="btn">Validation</button>
+            <div id="response"></div>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!--script ajax POST send  json server-->
+    <script>
+        {
+            url_for('static', file = form.js)
+        }
+    </script>
+
+</body>
+
+</html>

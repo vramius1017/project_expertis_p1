@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+
+    <title>Polish</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='js/form.js') }}"></script>
+
+</head>
+
+<body>
+
+    <div class="text-center">
+        <div class="btn btn-info">
+            <h1>Calculatrice méthode Polonaise inversé</h1>
+        </div>
+    </div>
+
+    <br><br><br>
+    <div class="text-center">
+        <h5>Cette notation est fondé sur l'utilisation d'une pile de mémoire avec l'opérande au sommet de la pile . Cette méthode consiste à ne pas utiliser de parenthéses pour séparer les opérateurs arithmétiques, les opérandes sont d'abord indiqués puis
+            l'opérateur arithmétique.</h5>
+        <h5>Source : <a href="https://fr.wikipedia.org/wiki/Notation_polonaise_inverse">Wikipedia</a></h5>
+    </div>
+
+
+
+    <br><br>
+
+    <article>
+        <h5 align="center">Veuillez entrer dans le premier champ un nombre entier</h5>
+        <h5 align="center">Veuillez entrer dans le second champ un second nombre entier</h5>
+        <h5 align="center">Selectionner l'opération à effectuer</h5>
+        <h5 align="center">appuyer sur Résultat</h5>
+    </article>
+
+    <br>
+
+    <form>
+        <div class="row">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="opérande 1">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="opérande 2">
+            </div>
+        </div>
+        <br>
+        <div class="text-center">
+            <div class="btn btn-info">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">addition</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">soustraction</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                    <label class="form-check-label" for="inlineRadio3">multiplication</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                    <label class="form-check-label" for="inlineRadio4">division</label>
+                </div>
+            </div>
+        </div>
+    </form>
+    <br>
+    <div class="text-center">
+        <button type="button" class="btn btn-primary">Resultats</button>
+    </div>
+    <br>
+
+    <a href="/">
+        <h3 align="center">Retour au Projet Expertus</h3>
+    </a>
+
+</body>

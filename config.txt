@@ -1,0 +1,11 @@
+# -*- coding: utf-8 - *-
+#
+# generation de la clef secrete SECRET_KEY 
+# import random,string
+# "".join([random.choice(string.printable) for _ in range(24)])
+# SECRET_KEY = "AvbU5,d4_!m9vo0$w2y%R\x0bP!"
+# 
+# PE_APP_ID = 92081344397689945
+# 
+# 
+# ####
