@@ -1,0 +1,344 @@
+{
+  "id": "eb173e1a-9a99-4be5-b574-c8a517563ea0",
+  "version": "2.0",
+  "name": "project_expertis",
+  "url": "http://127.0.0.1:5000",
+  "tests": [{
+    "id": "88f0c71f-4088-4986-96d5-710965481758",
+    "name": "tes_pine",
+    "commands": [{
+      "id": "a537d474-5a9b-4fe1-ac1c-68c1cc5b436f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "46e3cc32-408d-4f05-a347-0c116bc46964",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1140",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4981596e-d4cf-41ef-867d-344a699f322a",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(1) > h2",
+      "targets": [
+        ["css=a:nth-child(1) > h2", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Creation de Sapin de Noel')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "89088992-8d5c-4d65-bd92-ad1e51c6f8a5",
+      "comment": "",
+      "command": "click",
+      "target": "name=nombre",
+      "targets": [
+        ["name=nombre", "name"],
+        ["css=input", "css:finder"],
+        ["xpath=//input[@name='nombre']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd1d07ad-ea9b-4f08-9843-7b36b8840449",
+      "comment": "",
+      "command": "type",
+      "target": "name=nombre",
+      "targets": [
+        ["name=nombre", "name"],
+        ["css=input", "css:finder"],
+        ["xpath=//input[@name='nombre']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "3"
+    }, {
+      "id": "034c05ee-54c0-4f4e-ab3a-216059e1e632",
+      "comment": "",
+      "command": "click",
+      "target": "name=nombre",
+      "targets": [
+        ["name=nombre", "name"],
+        ["css=input", "css:finder"],
+        ["xpath=//input[@name='nombre']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0558589-8670-4cab-aad2-c698576e568f",
+      "comment": "",
+      "command": "type",
+      "target": "name=nombre",
+      "targets": [
+        ["name=nombre", "name"],
+        ["css=input", "css:finder"],
+        ["xpath=//input[@name='nombre']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "4"
+    }, {
+      "id": "f09faea7-417a-4898-b38f-defde8c258c6",
+      "comment": "",
+      "command": "click",
+      "target": "name=nombre",
+      "targets": [
+        ["name=nombre", "name"],
+        ["css=input", "css:finder"],
+        ["xpath=//input[@name='nombre']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b1f4aef-f3dc-475e-a60f-07e72e49acdd",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "name=nombre",
+      "targets": [
+        ["name=nombre", "name"],
+        ["css=input", "css:finder"],
+        ["xpath=//input[@name='nombre']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b86188c-1981-485a-8318-4dd6a3131e4d",
+      "comment": "",
+      "command": "type",
+      "target": "name=nombre",
+      "targets": [
+        ["name=nombre", "name"],
+        ["css=input", "css:finder"],
+        ["xpath=//input[@name='nombre']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "5"
+    }, {
+      "id": "13a5364f-a50a-42fb-b01d-fba315c12802",
+      "comment": "",
+      "command": "click",
+      "target": "name=nombre",
+      "targets": [
+        ["name=nombre", "name"],
+        ["css=input", "css:finder"],
+        ["xpath=//input[@name='nombre']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "540f4e4f-16e3-4afe-b2f5-69de7adce8f1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(2)",
+      "targets": [
+        ["css=.btn:nth-child(2)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Création du Sapin')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a04f6a66-1894-4b78-882a-1566f482c897",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(10) h3",
+      "targets": [
+        ["css=div:nth-child(10) h3", "css:finder"],
+        ["xpath=//button/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Nouveau Sapin')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "77fd5097-7e02-4ff5-8ba4-cf071ec9e911",
+      "comment": "",
+      "command": "type",
+      "target": "name=nombre",
+      "targets": [
+        ["name=nombre", "name"],
+        ["css=input", "css:finder"],
+        ["xpath=//input[@name='nombre']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "3"
+    }, {
+      "id": "e395ad77-5a24-462e-9a9e-3557be43a615",
+      "comment": "",
+      "command": "click",
+      "target": "name=nombre",
+      "targets": [
+        ["name=nombre", "name"],
+        ["css=input", "css:finder"],
+        ["xpath=//input[@name='nombre']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c7feee7-80dd-4e49-873d-7f605a69bdb6",
+      "comment": "",
+      "command": "type",
+      "target": "name=nombre",
+      "targets": [
+        ["name=nombre", "name"],
+        ["css=input", "css:finder"],
+        ["xpath=//input[@name='nombre']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "4"
+    }, {
+      "id": "c7b2ce96-775e-4f96-a8dd-c684be1af3bd",
+      "comment": "",
+      "command": "click",
+      "target": "name=nombre",
+      "targets": [
+        ["name=nombre", "name"],
+        ["css=input", "css:finder"],
+        ["xpath=//input[@name='nombre']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "81135265-792f-42ba-84d2-ade38bb52695",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "name=nombre",
+      "targets": [
+        ["name=nombre", "name"],
+        ["css=input", "css:finder"],
+        ["xpath=//input[@name='nombre']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "49a5d828-88a1-4799-aab3-642d64ed7800",
+      "comment": "",
+      "command": "type",
+      "target": "name=nombre",
+      "targets": [
+        ["name=nombre", "name"],
+        ["css=input", "css:finder"],
+        ["xpath=//input[@name='nombre']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "5"
+    }, {
+      "id": "34e0e97c-add6-4309-af39-9d3edbefb1ae",
+      "comment": "",
+      "command": "click",
+      "target": "name=nombre",
+      "targets": [
+        ["name=nombre", "name"],
+        ["css=input", "css:finder"],
+        ["xpath=//input[@name='nombre']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dbadd830-5c54-4aca-aea4-bc40357310c5",
+      "comment": "",
+      "command": "type",
+      "target": "name=nombre",
+      "targets": [
+        ["name=nombre", "name"],
+        ["css=input", "css:finder"],
+        ["xpath=//input[@name='nombre']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "6"
+    }, {
+      "id": "980797ba-ebde-45dd-87bc-577963f4fa61",
+      "comment": "",
+      "command": "click",
+      "target": "name=nombre",
+      "targets": [
+        ["name=nombre", "name"],
+        ["css=input", "css:finder"],
+        ["xpath=//input[@name='nombre']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "562c04dd-4d3b-4aac-acf1-cc1a520bdfbb",
+      "comment": "",
+      "command": "type",
+      "target": "name=nombre",
+      "targets": [
+        ["name=nombre", "name"],
+        ["css=input", "css:finder"],
+        ["xpath=//input[@name='nombre']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "7"
+    }, {
+      "id": "2e85be8d-a436-46e3-aa94-f19e3afb9786",
+      "comment": "",
+      "command": "click",
+      "target": "name=nombre",
+      "targets": [
+        ["name=nombre", "name"],
+        ["css=input", "css:finder"],
+        ["xpath=//input[@name='nombre']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f898bcaf-f96f-4dc8-a01d-2f546e2f9304",
+      "comment": "",
+      "command": "type",
+      "target": "name=nombre",
+      "targets": [
+        ["name=nombre", "name"],
+        ["css=input", "css:finder"],
+        ["xpath=//input[@name='nombre']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "8"
+    }, {
+      "id": "20064b5f-8d6a-433b-bd5e-da2e5d9b1b97",
+      "comment": "",
+      "command": "click",
+      "target": "name=nombre",
+      "targets": [
+        ["name=nombre", "name"],
+        ["css=input", "css:finder"],
+        ["xpath=//input[@name='nombre']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "76cd8b9c-6db9-4b9a-b0b8-6986957a9642",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(2)",
+      "targets": [
+        ["css=.btn:nth-child(2)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Création du Sapin')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec915a4b-f576-40cc-b1ad-f0491f1c6577",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(13) h3",
+      "targets": [
+        ["css=div:nth-child(13) h3", "css:finder"],
+        ["xpath=//div[4]/a/button/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Retour au Projet Expertus')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a5e2a549-6146-4d14-ac30-1a47bbecd70d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["88f0c71f-4088-4986-96d5-710965481758"]
+  }],
+  "urls": ["http://127.0.0.1:5000/"],
+  "plugins": []
+}
