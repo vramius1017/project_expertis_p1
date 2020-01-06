@@ -27,7 +27,7 @@ function global:deactivate ([switch]$NonDestructive) {
 
 deactivate -nondestructive
 
-$env:VIRTUAL_ENV="C:\Users\SACHA TORRES\Envs\flask_projects"
+$env:VIRTUAL_ENV="C:\Users\plateformeCEPS\Envs\fpprod"
 
 if (! $env:VIRTUAL_ENV_DISABLE_PROMPT) {
     # Set the prompt to include the env name
@@ -35,7 +35,7 @@ if (! $env:VIRTUAL_ENV_DISABLE_PROMPT) {
     function global:_OLD_VIRTUAL_PROMPT {""}
     copy-item function:prompt function:_OLD_VIRTUAL_PROMPT
     function global:prompt {
-        Write-Host -NoNewline -ForegroundColor Green '(flask_projects) '
+        Write-Host -NoNewline -ForegroundColor Green '(fpprod) '
         _OLD_VIRTUAL_PROMPT
     }
 }

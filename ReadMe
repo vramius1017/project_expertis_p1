@@ -1,3 +1,52 @@
 # coding : utf-8
 
-print(" ceci est du python")
+                             PROJET EXPERTUS
+
+Ceci est une application web nommé Projet Expertus à partir de la demande client.
+Cette application web comprend 4 Fonctionalités :
+ - Creation de Sapinde Noel
+ - Polish Inverse Calculator
+ - Words Spliter
+ - Words
+
+
+cette application a été dévellopé en Python 3.7.5 , Flask 1.1.1 avec HTML5,Bootstrap 4.4.1.
+
+* Creation de Sapin de Noel :
+
+input : entier entre 3 et 12
+output : affichage d'un sapin avec les caractéres "*" et "_"
+
+
+* Polish Inverse Calculator:
+
+input : deux entiers x et y 
+        avec 0=< x <= 1200 premiére opérande 
+        avec 1=< y <= 1200 deuxiéme opérande
+
+        un symbole opératoire mathématique représenté par l'un descaractéres suivants : "+","-","/","*"
+
+output : affichage selon la représentation de la méthode Polonaise inversé
+ligne1   x | y | symbole
+          ligne2   résultat 
+
+
+* Words Spliter :
+
+input : une phrase soit une chaine de caractéres
+
+output : l'affichage de la phrase en entrée
+ l'affichage des 10 premiers caractéres de la phrase 
+et le nombre de caractéres de la phrase en entrée 
+
+* Words :
+
+input : une phrase composée de mots (soit une chaine de caractéres)
+
+output : l'affichage de cette même phrase 
+mais en commencant par le dernier mot et enfinissant par le premier mot de cette même phrase.
+
+
+
+
+
