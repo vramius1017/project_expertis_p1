@@ -53,11 +53,16 @@ def TestBr(n):
 
 @app.route('/result_polish/', methods=['POST'])
 def result_polish():
-
+    
+    er : str
+    er = " "
     nombre1 = request.form['nombre1']
     nombre2 = request.form['nombre2']
     op = request.form['op']
     opn = ""
+    nb = 0
+    respjson = json.dumps({'nombre1': nombre1, 'nombre2': nombre2,
+                           'nb': nb, 'op': op, 'opn': opn, 'status': 200})
     if op == "+":
         nb = int(nombre1) + int(nombre2)
         opn = "addition"
@@ -73,11 +78,16 @@ def result_polish():
                 if op == "/" and int(nombre2) != 0:
                     nb = float(nombre1) / float(nombre2)
                     opn = "division par un nombre non nul"
-    
-    respjson = json.dumps({'nombre1': nombre1, 'nombre2': nombre2,
-                           'nb': nb, 'op': op, 'opn': opn, 'status': 200})
-    
-    return render_template('result_polish.html', nombre1=nombre1, nombre2=nombre2, nb=nb, op=op, opn=opn, respjson=respjson)
+
+                    if op  == " ":
+                        er == " entrer une opération !!!"
+                        try:
+                            opn ="pas de symbole "
+                            nb = 0
+                            er = " entrer une opération !!!"
+                        except UnboundLocalError :
+                            return render_template('result_polish',nb=nb,op=op,opn=opn)
+    return render_template('result_polish.html', nombre1=nombre1, nombre2=nombre2, nb=nb, op=op, opn=opn, respjson=respjson, er=er)
 
 
 def CleanChain(x):
