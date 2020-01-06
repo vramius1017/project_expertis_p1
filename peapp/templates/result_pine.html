@@ -16,14 +16,16 @@
     </div>
     <br><br>
     <div>
-        <!-- <h3 align="center">{{ star }}</h3>
+
         {% for l in branch %} {% if l % 2 == 1 %}
-        <h3 align="center">{{ l*star }}</h3>
+        <h3 align="center">{{ ((2*l)+1)*star }}</h3>
         <h3 align="center">{{((2*l)-1)*space}} </h3>
+        {% else %}
+         <h3 align="center">{{ ((2*l)+1)*star }}</h3>
         {% endif %} {% endfor %} {% for k in foot %}
-        <h3 align="center">{{(a*space)+a}}</h3>
-        {% endfor %} -->
-        <!-- <h3 align="center">{{(a-1)*space+supt}}</h3> -->
+        <h3 align="center">{{k*space}}{{star}}</h3>
+        {% endfor %} 
+        <h3 align="center">{{ 3*space }}{{supt}}</h3>
     </div>
 
     <br><br>

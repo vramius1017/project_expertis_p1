@@ -48,8 +48,7 @@ def TestBr(n):
         tp = int(n)/2
     else:
         tp = (int(n)+1)/2
-        t = int(tp)
-        return t 
+        return t == int(tp)
 
 
 @app.route('/result_polish/', methods=['POST'])
@@ -103,15 +102,20 @@ def result_word():
 
 @app.route("/result_pine/",methods=['POST'])
 def result_pine():
-    
+    a : int
     nombre = request.form['nombre']
-    # a = TestBr(nombre)
-    # star = "*"
-    # space = " "
-    # supt = "______"
-    # branch = [3,4,5,6,7,8,9,10,11,12,13]
-    # foot = list(range(1,a)
-    return render_template('result_pine.html', nombre=nombre)#, a=a, branch=branch, star=star, space=space, foot=foot, supt=supt)
+    b : float
+    b = 0
+    space : str
+    foot = []
+    a = TestBr(nombre)
+    star = "*"
+    space = " "
+    supt = "______"
+    branch = list(range(int(nombre)))
+    foot = [0,1,2]
+    return render_template('result_pine.html', nombre=nombre, a=a, space=space,supt=supt,star=star,branch=branch, foot=foot, b=b) 
+    #branch=branch, star=star, space=space, foot=foot, supt=supt)
     
 
 
