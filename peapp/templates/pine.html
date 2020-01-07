@@ -10,20 +10,21 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- script AJAX de la fonction-->
     <script src="{{url_for('static', filename='result_pine.js')}}"></script>
 
 </head>
 
 <body>
-
+        <!-- header de la page -->
     <div class="text-center">
         <div class="btn btn-success">
             <h1>Bienvenue chez Sapin anD Co</h1>
         </div>
     </div>
-
+        <!-- fin du header de la page -->
     <br><br>
-
+                      <!-- doc utilisateur du formulaire -->
     <h2 align="center">Entrez le nombre de branches de votre Sapin </h2>
     <h2 align="center">Attention !!! nos sapins sont mâtures et ont plus de 3 branches</h2>
     <br><br>
@@ -31,7 +32,7 @@
 
 
     <br><br><br>
-
+                      <!-- formulaire -->
     <div align="center">
         <form method="POST" action="/result_pine/">
             Nombre de branches ( 3 à 12)
@@ -39,7 +40,7 @@
             <button type="submit" class="btn btn-success">Création du Sapin</button>
         </form>
     </div>
-
+                       <!-- lien vers la page d'acceuil -->
     <br><br>
     <a href="/">
         <h3 align="center">Retour au Projet Expertus</h3>
@@ -48,3 +49,6 @@
 </body>
 
 </html>
+
+
+
