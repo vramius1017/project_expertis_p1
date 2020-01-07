@@ -5,7 +5,13 @@
 # license en cours 
 # github vramius1017/project_expertis_p1
 
-                             PROJET EXPERTUS
+
+
+
+                                                 PROJET EXPERTUS
+                                                 
+                                                 
+                                                 
 
 Ceci est une application web nommé Projet Expertus à partir de la demande client.
 Cette application web comprend 4 Fonctionalités :
@@ -32,6 +38,13 @@ input : deux entiers x et y
         un symbole opératoire mathématique représenté par l'un descaractéres suivants : "+","-","/","*"
 
 output : affichage selon la représentation de la méthode Polonaise inversé
+
+
+
+
+
+
+COPYRIGHT 2020   TORRES SACHA sachatorres974@gmail.com
 ligne1   x | y | symbole
           ligne2   résultat 
 
