@@ -11,10 +11,13 @@
 </head>
 
 <body>
+           <!-- header de la page  -->
     <div align="center" class="alert alert-primary">
         <h1 align="center">Result from Polish Inverse Calculator</h1>
     </div>
     <br><br>
+    
+              <!-- tableau d'affichage de l'opération -->
     <div align="center" class="alert alert-primary">
         <tr>
             <h3>
@@ -24,7 +27,8 @@
                 <td>| Symbole mathématique : {{op}}</td>
             </h3>
         </tr>
-
+                 
+              <!-- affichage du résultat de l'opération -->
     </div>
     <div align="center" class="alert alert-success">
         <th>
@@ -33,10 +37,11 @@
 
         </th>
     </div>
+              <!-- affichage du code erreur si pas de saisie d'opération -->
     <h3 align="center">{{er}}</h3>
     <br><br>
     <br><br>
-
+                           <!-- liens retour vers page d'acceuil et vers un nouveau calcul -->
     <div align="center">
         <a href="/polish">
             <button type="button" class="btn btn-primary">
