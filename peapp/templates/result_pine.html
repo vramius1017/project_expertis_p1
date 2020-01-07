@@ -10,6 +10,8 @@
 </head>
 
 <body>
+    
+        <!-- header de la page -->
     <h1 align="center">Christmas Pine Tree</h1>
     <br>
     <h3 align="center">Voiçi votre Sapin avec {{nombre}} branches</h3>
@@ -18,20 +20,20 @@
     <div>
 
         {% for l in branch %} {% if l % 2 == 1 %}
-        <h3 align="center">{{ ((2*l)+1)*star }}</h3>
+        <h3 align="center">{{ ((2*l)+1)*star }}</h3><!-- affichage centré du nombre impair d' étoiles constituant chaque branche -->
         <h3 align="center">{{((2*l)-1)*space}} </h3>
         {% else %}
-         <h3 align="center">{{ ((2*l)+1)*star }}</h3>
+         <h3 align="center">{{ ((2*l)+1)*star }}</h3><!-- affichage centré du pied du  sapin -->
         {% endif %} {% endfor %} {% for k in foot %}
         <h3 align="center">{{k*space}}{{star}}</h3>
         {% endfor %} 
-        <h3 align="center">{{ 3*space }}{{supt}}</h3>
+        <h3 align="center">{{ 3*space }}{{supt}}</h3><!-- affichage centré du support du pied -->
     </div>
 
     <br><br>
     <div align=center>
 
-
+                             <!-- lien vers une nouvelle uitlisation de l'application et vers la page d'acceuil -->
     </div>
     <div align="center">
         <a href="/pine">
