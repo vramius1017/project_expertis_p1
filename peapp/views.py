@@ -6,11 +6,12 @@ app = Flask(__name__)
 
 app.config.from_object('config')
 
+# route de la page d'acceuil projet expertis 
 @app.route("/")
 def index():
     return render_template('index.html') 
 
-
+# routes des 4 fonctions  
 
 @app.route("/pine/")
 def pine():
@@ -31,6 +32,8 @@ def split():
 def words():
     return render_template('words.html')
 
+# routes des pages résultats des fonctions 
+
 @app.route("/result_split/",methods=['POST'])
 def result_split():
     z = []
@@ -42,6 +45,7 @@ def result_split():
     rejson = json.dumps({'phrase':phrase,'a':a,'z':z})
     return render_template('result_split.html',phrase=phrase,a=a,z=z,rejson=rejson)
 
+# fonction pour tester la parité d'un entier 
 def TestBr(n):
     t  = 0
     if int(n) % 2 == 0:
@@ -89,7 +93,8 @@ def result_polish():
                             return render_template('result_polish',nb=nb,op=op,opn=opn)
     return render_template('result_polish.html', nombre1=nombre1, nombre2=nombre2, nb=nb, op=op, opn=opn, respjson=respjson, er=er)
 
-
+# fonction pour nettoyer la chaine de caractére résultante de la fonction words
+# x 
 def CleanChain(x):
     x = str(x)
     x = x.replace("[", " ")
@@ -98,6 +103,12 @@ def CleanChain(x):
     x = x.replace(",", " ")
     x = x.replace('"', " ")
     return x
+# route du résultat de la fonction word
+# input : phrase chaine de characteres type text  issue du formulaire champ phrase
+# ph : liste de mot resultant de la fonction split()
+# p : liste de mots resultant de la fonction reverse()
+# jedi : liste  resultant de la CleanChain()
+
 
 @app.route("/result_word/", methods=['POST'])
 def result_word():
@@ -109,6 +120,11 @@ def result_word():
     rjson = json.dumps({'phrase':phrase,'ph':ph,'p':p,'jedi':jedi})
     return render_template('result_word.html',phrase=phrase,p=p,ph=ph,jedi=jedi)
      
+# route du résultat de la fonction creation sapin
+# input : nombre type number issue du formulaire champ nombre
+# space , star : string caracteres d'affichage déssinant le sapin
+# a : int  nombre d'toile à afficher 2a-1 par branches
+# branch , foot : liste d'entiers pour l'affichage des branches et du pied du sapin
 
 @app.route("/result_pine/",methods=['POST'])
 def result_pine():
@@ -125,7 +141,7 @@ def result_pine():
     branch = list(range(int(nombre)))
     foot = [0,1,2]
     return render_template('result_pine.html', nombre=nombre, a=a, space=space,supt=supt,star=star,branch=branch, foot=foot, b=b) 
-    #branch=branch, star=star, space=space, foot=foot, supt=supt)
+    
     
 
 
