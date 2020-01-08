@@ -4,7 +4,7 @@ $(function () {
      $.ajax({
          data : $('form').val(),
          type : 'POST',
-         url : '/result_word',
+         url : '/result_word/',
          success : function(response){
              console.log(response);
          },

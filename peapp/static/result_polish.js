@@ -4,7 +4,7 @@ $(function () {
      $.ajax({
          data : $('form').val(),
          type : 'POST',
-         url : '/',
+         url : '/result_polish/',
          success : function(response){
              console.log(response);
          },
