@@ -8,7 +8,7 @@ app.config.from_object('config')
 
 # route de la page d'acceuil projet expertis 
 
-@app.route("/index/")
+@app.route("/")
 def index():
     return render_template('index.html') 
 
